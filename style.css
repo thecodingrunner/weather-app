@@ -1,0 +1,92 @@
+body, html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-image: url('sky.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  height: 300px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.temp, 
+.feelslike,
+.wind {
+  margin: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.3);
+  border: white 3px solid;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.condition {
+  display: flex;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+input {
+  border: white 3px solid;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 7px;
+  width: 250px;
+  height: 40px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: white;
+  outline: none;
+  padding: 0px 10px;
+}
+
+button {
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  border: white 3px solid;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: white;
+  /* padding: 0px 10px; */
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
